@@ -1,4 +1,4 @@
-import { QuoteResponse } from ".."
+import { QuoteResponse } from '..'
 
 export interface TopsResponse {
     askPrice: number
