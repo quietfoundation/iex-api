@@ -1,6 +1,6 @@
 {
   "name": "iex-api",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Unofficial SDK for using the IEX API.",
   "main": "index.js",
   "types": "index.d.ts",
