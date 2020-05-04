@@ -1,8 +1,8 @@
+import moment from 'moment-timezone'
 import { EVENT_TYPE } from './apis/events'
 import * as MarketDataAPI from './apis/marketData'
 import * as ReferenceDataAPI from './apis/referenceData'
 import * as StocksAPI from './apis/stocks'
-import moment from 'moment-timezone'
 
 const toQueryList = (values: string[]): string => values.map(encodeURIComponent).join(',')
 
@@ -16,7 +16,8 @@ const formatDate = (date: Date | undefined) => {
   if (date === undefined) {
     return date
   }
-  return moment.tz(date, "America/New_York").format('YYYY-MM-DD')
+  // tslint:disable no-unsafe-any
+  return moment.tz(date, 'America/New_York').format('YYYY-MM-DD')
 }
 
 // tslint:disable:no-unsafe-any

@@ -1,10 +1,12 @@
 import Attribution from './attribution'
-import IEXClient from './client'
+import IEXClient, { fromIexSymbol, toIexSymbol } from './client'
 import WebsocketIEXClient from './websocketClient'
 
 export {
   Attribution,
+  fromIexSymbol,
   IEXClient,
+  toIexSymbol,
   WebsocketIEXClient
 }
 
