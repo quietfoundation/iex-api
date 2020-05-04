@@ -1,6 +1,6 @@
 {
   "name": "iex-api",
-  "version": "0.8.7",
+  "version": "0.8.17",
   "description": "Unofficial SDK for using the IEX API.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -39,14 +39,14 @@
     "moment-timezone": "^0.5.6"
   },
   "devDependencies": {
-    "@types/moment-timezone": "^0.5.6",
     "@types/jest": "^21.1.8",
+    "@types/moment-timezone": "^0.5.6",
     "@types/npm": "^2.0.29",
     "fetch-ponyfill": "^4.1.0",
     "jest": "^21.2.1",
     "ts-jest": "^21.2.4",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.9.2"
   },
   "jest": {
     "collectCoverage": true,

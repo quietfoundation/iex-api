@@ -1,11 +1,13 @@
 import Attribution from './attribution'
-import IEXClient from './client'
+import IEXClient, { toIexSymbol, fromIexSymbol } from './client'
 import WebsocketIEXClient from './websocketClient'
 
 export {
   Attribution,
   IEXClient,
-  WebsocketIEXClient
+  WebsocketIEXClient,
+  toIexSymbol,
+  fromIexSymbol
 }
 
 export * from './apis/marketData'
