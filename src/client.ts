@@ -16,7 +16,8 @@ const formatDate = (date: Date | undefined) => {
   if (date === undefined) {
     return date
   }
-  return moment.tz(date, "America/New_York").format('YYYY-MM-DD')
+  // tslint:disable no-unsafe-any
+  return moment.tz(date, 'America/New_York').format('YYYY-MM-DD')
 }
 
 // tslint:disable:no-unsafe-any
