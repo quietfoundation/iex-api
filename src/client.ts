@@ -283,9 +283,9 @@ export default class IEXClient {
    * @param stockSymbol The symbol of the stock to fetch data for.
    * @param range The date range to get dividends from.
    */
-  public stockDividends(stockSymbol: string, range: StocksAPI.DividendRange): Promise<StocksAPI.Dividend[]> {
+  public stockDividends(stockSymbol: string, range: StocksAPI.DividendRange): Promise<StocksAPI.Dividend[] | StocksAPI.Dividend> {
     const iexSymbol = toIexSymbol(stockSymbol)
-    return this.request(`/stock/${encodeURIComponent(iexSymbol)}/dividends/${range}`)
+    return this.request(`/stock/${encodeURIComponent(iexSymbol)}/dividends?range=${range}`)
   }
 
   /**

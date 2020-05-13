@@ -326,7 +326,7 @@ export interface EarningsEstimateResponse {
   estimates: EarningsEstimate[]
 }
 
-export type DividendRange = '5y' | '2y' | '1y' | 'ytd' | '6m' | '3m' | '1m'
+export type DividendRange = '5y' | '2y' | '1y' | 'ytd' | '6m' | '3m' | '1m' | 'next'
 
 export interface Dividend {
   exDate: string
