@@ -355,6 +355,31 @@ export interface RecommendationTrendsResponse {
   ratingUnderweight: number
 }
 
+export interface AdvancedStatsResponse extends KeyStatsResponse {
+  beta: number
+  totalCash: number
+  currentDebt: number
+  revenue: number
+  grossProfit: number
+  totalRevenue: number
+  EBITDA: number
+  revenuePerShare: number
+  revenuePerEmployee: number
+  debtToEquity: number
+  profitMargin: number
+  enterpriseValue: number
+  enterpriseValueToRevenue: number
+  priceToSales: number
+  priceToBook: number
+  forwardPERatio: number
+  pegRatio: number
+  peHigh: number
+  peLow: number
+  week52highDate: string
+  week52lowDate: string
+  putCallRatio: number
+}
+
 export interface DelayedQuoteResponse {
   symbol: string
   delayedPrice: number

@@ -197,6 +197,16 @@ export default class IEXClient {
   }
 
   /**
+   * Gets key stats for the given stock symbol.
+   *
+   * @see https://www.iexcloud.io/docs/api/#advanced-stats
+   * @param stockSymbol The symbol of the stock to fetch data for.
+   */
+  public stockAdvancedStats(stockSymbol: string): Promise<StocksAPI.AdvancedStatsResponse> {
+    const iexSymbol = toIexSymbol(stockSymbol)
+    return this.request(`/stock/${encodeURIComponent(iexSymbol)}/advanced-stats`)
+  }
+  /**
    * Gets a list of peer tickerss for the given symbols.
    *
    * @see https://iextrading.com/developer/docs/#peers
